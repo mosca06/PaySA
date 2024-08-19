@@ -23,23 +23,23 @@ This is a simple Ruby on Rails application that simulates online payment process
    git clone https://github.com/yourusername/payment_simulation_app.git
    cd payment_simulation_app
    
-Install Dependencies:
+2. Install Dependencies:
 ```bash
 bundle install
 ```
 
-Setup the Database:
+3. Setup the Database:
 ```bash
 rails db:create
 rails db:migrate
 ```
 
-Start the Rails Server:
+4. Start the Rails Server:
 ```bash
 rails server
 ```
 
-Access the Application:
+5. Access the Application:
 Open your browser and go to http://localhost:3000/transactions/new to create a new transaction and simulate payment processing.
 
 Usage
