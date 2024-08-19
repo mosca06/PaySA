@@ -25,7 +25,7 @@ class TransactionsController < ApplicationController
     if @transaction.save
 
       @transaction.update!(status: 'Processed')
-      redirect_to @transaction, notice: 'Transaction was successfully created and processed.'
+      redirect_to transactions_path, notice: 'Transaction was successfully created and processed.'
     else
       render :new
     end

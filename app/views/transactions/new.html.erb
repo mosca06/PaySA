@@ -1,19 +1,21 @@
-<h1>New Transaction</h1>
+<div class="container">
+  <h1>New Transaction</h1>
 
-<%= form_with(model: @transaction, local: true) do |form| %>
-  <div class="field">
-    <%= form.label :amount %>
-    <%= form.number_field :amount, step: :any %>
-  </div>
+  <%= form_with(model: @transaction, local: true) do |form| %>
+    <div class="field">
+      <%= form.label :amount %>
+      <%= form.number_field :amount, step: :any %>
+    </div>
 
-  <div class="field">
-    <%= form.label :currency %>
-    <%= form.select :currency, options_for_select(CURRENCIES) %>
-  </div>
+    <div class="field">
+      <%= form.label :currency %>
+      <%= form.select :currency, options_for_select(CURRENCIES) %>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+    <div class="actions">
+      <%= form.submit "Submit Payment", id: "payment-button", class: "btn" %>
+    </div>
+  <% end %>
 
-<%= link_to 'Back', transactions_path %>
+  <%= link_to 'Back', transactions_path, class: "btn" %>
+</div>
