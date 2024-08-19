@@ -1,24 +1,50 @@
-# README
+# Payment Simulation Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+This is a simple Ruby on Rails application that simulates online payment processing. It is designed for demonstration purposes to showcase basic payment functionalities. The application allows users to create payment transactions, simulate payment processing, and view transaction details.
 
-* Ruby version
+## Features
 
-* System dependencies
+- **Create Transactions:** Users can enter transaction details including amount and currency.
+- **Simulate Payment Processing:** After creating a transaction, the application simulates the payment process, updating the transaction with a fake transaction number and status.
+- **View Transaction Details:** Users can view detailed information about each transaction, including the simulated payment status.
 
-* Configuration
+## Technologies
 
-* Database creation
+- **Ruby on Rails:** Framework used for building the application.
+- **PostgreSQL:** Database used for storing transaction data.
+- **Faker:** Gem used to generate fake transaction data for simulation.
 
-* Database initialization
+## Setup
 
-* How to run the test suite
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/payment_simulation_app.git
+   cd payment_simulation_app
+   
+2. **Install Dependencies:**
+   ```bash
+   bundle install
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+3. **Setup the Database:**
+   ```bash
+   rails db:create
+   rails db:migrate
+   ```
 
-* Deployment instructions
+4. **Start the Rails Server:**
+   ```bash
+   rails server
+   ```
 
-* ...
+5. **Access the Application:**
+   Open your browser and go to http://localhost:3000/transactions/new to create a new transaction and simulate payment processing.
+
+**Usage**
+   Create a New Transaction: Fill out the form with the transaction amount and currency, then submit to create a transaction.
+   View Transaction Details: After submission, you'll be redirected to a page displaying the details of the transaction, including the simulated payment status and transaction number.
+   Contribution
+   Feel free to fork the repository and make improvements or adjustments. If you have any questions or issues, please open an issue on GitHub.
+
